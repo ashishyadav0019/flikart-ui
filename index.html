@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<form name="cc-form" id="cc-form">
+    <div>
+        <input type="text"  name= "cc-number" id = "cc-number" pattern= "[0-9]+" required placeholder="Card Number">
+        <span id="cc-type"></span>
+    </div>
+
+    <div>
+        <div>
+            <div>Expiry</div>
+            <select id="cc-month">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option><option value="08">08</option><option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <select required id="cc-year"></select>
+            <input type="password"  name= "cc-cvv" id = "cc-cvv" pattern= "[0-9]{3,4}" maxlength="3" disabled required placeholder="CVV">
+        </div>
+
+    </div>
+</form>
+<button id="submit-card" disabled >Submit</button>
+<button id="test"  onclick="hey('hey');">Submit</button>
+
+<hr>
+<div id="savedCard"></div>
+
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
